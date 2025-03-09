@@ -606,11 +606,11 @@
                 options: ["Amigos", "An\xfancios", "Redes sociais", "Outros"],
                 reward: 35.88
             }, {
-                question: "Voc\xea indicaria o Kwai para amigos?",
+                question: "Voc\xea indicaria o aplicativo para amigos?",
                 options: ["Definitivamente sim", "Provavelmente sim", "Talvez", "N\xe3o"],
                 reward: 33.92
             }, {
-                question: "Qual seu objetivo principal no Kwai?",
+                question: "Qual seu objetivo principal no aplicativo?",
                 options: ["Ganhar dinheiro", "Entretenimento", "Criar conte\xfado", "Conhecer pessoas"],
                 reward: 31.76
             }, {
@@ -626,7 +626,7 @@
                 options: ["Frequentemente", "\xc0s vezes", "Raramente", "Nunca"],
                 reward: 25.82
             }, {
-                question: "O que mais te motiva a usar o Kwai?",
+                question: "O que mais te motiva a usar o aplicativo?",
                 options: ["Recompensas", "Conte\xfado", "Comunidade", "Criar v\xeddeos"],
                 reward: 83.71
             }]
