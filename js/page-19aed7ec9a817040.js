@@ -417,7 +417,7 @@
                             children: [(0,
                             n.jsx)("div", {
                                 className: "w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold",
-                                children: "K"
+                                children: "R$"
                             }), (0,
                             n.jsx)("span", {
                                 className: "text-2xl font-bold",
