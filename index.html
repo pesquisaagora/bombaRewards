@@ -19,11 +19,37 @@
         data-click-id-param="click_id">
 </script>
 
+  <script type="text/javascript">
+    (function () {
+        /**
+         * Função para verificar a presença de múltiplos parâmetros na URL
+         * @param {Array} names - Array contendo os nomes dos parâmetros a serem verificados
+         * @returns {boolean} - Retorna true se todos os parâmetros estiverem presentes, caso contrário, false
+         */
+        function hasAllURLParameters(names) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return names.every(param => urlParams.has(param));
+        }
 
-<script 
-        src="https://d1atmqbt05kisf.cloudfront.net/scripts/utm-handler.js"
-        data-token="2a11cff1-a1ac-44e6-a13c-d6ef0810c13c"
-        data-click-id-param="click_id">
+        // Array contendo os parâmetros obrigatórios
+        const requiredParams = ['CampaignID', 'adSETID', 'CreativeID', 'pixel_id'];
+
+        // URL para redirecionamento caso algum dos parâmetros não esteja presente
+        const redirectURL = 'https://appavaliadorpremios.shop/lp/';
+
+        /**
+         * Função principal que verifica os parâmetros da URL
+         * e redireciona o usuário se necessário
+         */
+        function checkURLParameters() {
+            if (!hasAllURLParameters(requiredParams)) {
+                window.location.href = redirectURL;
+            }
+        }
+
+        // Executa a verificação imediatamente assim que o script é carregado
+        checkURLParameters();
+    })();
 </script>
 
   <meta charset="utf-8">
